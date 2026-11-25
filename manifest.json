@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Perfect Grade Display",
+  "version": "1.0.0",
+  "description": "Displays fractions as full marks on the Waterloo LEARN grades page.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://learn.uwaterloo.ca/d2l/lms/grades/my_grades/main.d2l*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
